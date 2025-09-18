@@ -38,7 +38,7 @@
   aspect-ratio: 1 / 1;
   }
  
-.productImage::before {
+/* .productImage::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -48,7 +48,7 @@
   filter: blur(5px);
   
   z-index: 0;
-}
+} */
 .productImage .swiper {
   width: 100%;
   height: 100%;
@@ -92,7 +92,7 @@
  
 }
 
-/* .productImage::before {
+.productImage::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -102,7 +102,7 @@
   filter: blur(5px);
   transform: scale(1);
   z-index: 0;
-} */
+}
 
 .productImage .swiper {
   position: relative;
@@ -115,5 +115,6 @@
 }
 
 .productContainer.selected .productImage img {
+
   transform: scale(1.05); /* זום עדין רק כשהמוצר נבחר */
 }
