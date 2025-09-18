@@ -13,7 +13,7 @@ export default function NavBar() {
         <div className="nav-container">
           <div className="logoNavBar">
 
-            <img src={FellyLogoSmall} className='img' alt="" />
+          FELLY
           </div>
           <div className="mobile-menu-button" onClick={() => setOpen(!open)}>
             ☰

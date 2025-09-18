@@ -67,22 +67,20 @@ const Product = ({ images, name, selected, onClick }) => {
       className={`productContainer ${selected ? "selected" : ""}`}
       onClick={onClick}
     >
-      <div
-        className="productImage"
-        // style={{ backgroundImage: `url(${activeImage})` }}
-      >
-        <Swiper
-          spaceBetween={0}
-          slidesPerView={1}
-          onSlideChange={(swiper) => setActiveImage(images[swiper.activeIndex])}
-        >
-          {images.map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img className="img" src={img} alt={`${name}-${idx}`} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+    <div className="productImage">
+  <Swiper
+    spaceBetween={0}
+    slidesPerView={1}
+    onSlideChange={(swiper) => setActiveImage(images[swiper.activeIndex])}
+  >
+    {images.map((img, idx) => (
+      <SwiperSlide key={idx}>
+        <img src={img} alt={`${name}-${idx}`} />
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
       <div className="productInfo">
         <p className="productName">
           <span className="falley-name">felly:</span>
