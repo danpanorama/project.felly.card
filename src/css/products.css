@@ -31,7 +31,7 @@
 
 .productImage {
   flex: 1;
-  max-height: 300px; /* מגביל את הגובה */
+ 
   overflow: hidden;
     background: #4f4e4e;
   aspect-ratio: 1 / 1; /* 👈 ריבוע מושלם, אפשר לשנות ל-4/3 או 3/4 */
@@ -52,7 +52,7 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
-  object-fit: contain;
+ 
     object-fit: cover; /* cover = תמיד ממלא, חותך קצת אם צריך */
   transition: transform 0.3s ease; /* לאנימציית זום */
  
