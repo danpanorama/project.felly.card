@@ -31,12 +31,13 @@
 }
 
 .productImage {
-  flex: 1;
- position: relative;
+  width: 100%;
+  height: 100%; /* עכשיו התמונה ממלאת את הקונטיינר */
   overflow: hidden;
     background: #e2e2e2;
-  aspect-ratio: 1 / 1; /* 👈 ריבוע מושלם, אפשר לשנות ל-4/3 או 3/4 */
-}
+  
+  }
+ 
 
 .productImage .swiper {
   width: 100%;
