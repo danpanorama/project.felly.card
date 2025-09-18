@@ -19,9 +19,9 @@ padding: 5px 10px;
   margin: 0 auto;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
+.logoNavBar {
+ height: 50px;
+ transform: translateX(-20px);
 }
 
 .mobile-menu-button {
@@ -42,11 +42,12 @@ padding: 5px 10px;
   justify-content: space-between;
   padding: 2rem 1rem;
   transition: right 0.3s ease-in-out;
-  z-index: 200;
+   z-index: 999999999999999999;
 }
 
 .side-drawer.open {
   right: 0;
+  z-index: 999999999999999999;
 }
 
 .drawer-logo {

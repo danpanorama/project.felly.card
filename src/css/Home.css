@@ -2,14 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   gap: 1.5rem;
   padding: 2rem;
-  min-height: 100vh;
-  background: linear-gradient(180deg, #833ab4, #fd1d1d, #fcb045); /* אינסטגרם סטייל */
+  background: linear-gradient(180deg, #833ab4d0, #fd1d1de8, #fcb045f7),url('../assets/iloveimg-resized/moranandbrown.jpeg'); /* אינסטגרם סטייל */
   color: white;
   border-radius: 30px;
   text-align: center;
+   background-size: cover;
+  object-fit: cover;
+}
+
+.home-container2{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0px;
+  background-image: linear-gradient(180deg,#fcb045,  #fd1d1d,#833ab4 ); /* אינסטגרם סטייל */
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+ 
 }
 
 .social-icons {

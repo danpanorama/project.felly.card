@@ -3,7 +3,7 @@ import '../../css/Navbar.css';
 import { FaFacebookF, FaInstagram, FaShareAlt } from 'react-icons/fa';
 import LogoCircle from '../opening/LogoCircle';
 import NavLogoMenu from './NavLogoMenu';
-
+import FellyLogoSmall from '../../assets/fellylogosmall.png'
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
@@ -11,7 +11,10 @@ export default function NavBar() {
     <>
       <header className="navbar">
         <div className="nav-container">
-          <div className="logo">Felly.Project</div>
+          <div className="logoNavBar">
+
+            <img src={FellyLogoSmall} className='img' alt="" />
+          </div>
           <div className="mobile-menu-button" onClick={() => setOpen(!open)}>
             ☰
           </div>

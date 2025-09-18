@@ -1,0 +1,103 @@
+.productListContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  overflow: hidden;
+}
+
+.productContainer {
+  min-height: 250px;
+  
+  border-radius: 5px;
+  background-color: white;
+ 
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.productContainer.selected {
+  grid-column: 1 / -1; /* תופס שורה מלאה */
+  min-height: 400px;
+  z-index: 10;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.productImage {
+  flex: 1;
+  max-height: 300px; /* מגביל את הגובה */
+  overflow: hidden;
+    background: #4f4e4e;
+  aspect-ratio: 1 / 1; /* 👈 ריבוע מושלם, אפשר לשנות ל-4/3 או 3/4 */
+}
+
+.productImage .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.productImage .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+    object-fit: cover; /* cover = תמיד ממלא, חותך קצת אם צריך */
+  transition: transform 0.3s ease; /* לאנימציית זום */
+ 
+}
+
+.productName {
+  margin-top: 10px;
+  padding-bottom: 5px;
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+.productImage .swiper {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: 100%;
+}
+
+.productImage .swiper-slide {
+  width: 100% !important;  /* לא אלפי פיקסלים */
+  flex-shrink: 0;          /* שלא יתכווץ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.productImage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  transform: scale(1);
+  z-index: 0;
+}
+
+.productImage .swiper {
+  position: relative;
+
+}
+
+.productInfo{
+  background-color: white;
+  z-index: 999;
+}
