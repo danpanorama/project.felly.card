@@ -67,7 +67,12 @@ const Product = ({ images, name, selected, onClick }) => {
       className={`productContainer ${selected ? "selected" : ""}`}
       onClick={onClick}
     >
-    <div className="productImage">
+    <div className="productImage"
+    
+      style={{ backgroundImage: `url(${activeImage})` }}
+    
+    
+    >
   <Swiper
     spaceBetween={0}
     slidesPerView={1}
