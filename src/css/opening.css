@@ -1,0 +1,47 @@
+.logoCircleContainer {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: 1px solid black;
+    outline-offset: 3px;
+    position: relative;
+    perspective: 1000px; /* עומק לסיבוב */
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d; /* מאפשר לראות את שני הצדדים */
+}
+
+.logoCircleContainer.rotate {
+    transform: rotateY(180deg);
+}
+
+.circle-front,
+.circle-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden; /* מסתיר את הצד האחורי */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-front {
+    background: #fff;
+}
+
+.circle-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.circle-back {
+    background: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    transform: rotateY(180deg); /* זה מה שגורם לצד האחורי להופיע */
+}
