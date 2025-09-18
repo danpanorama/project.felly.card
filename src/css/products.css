@@ -35,7 +35,7 @@
     background: #e2e2e2;
   background-size: cover;
   background-position: center;
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   }
  
 /* .productImage::before {
