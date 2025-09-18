@@ -31,9 +31,9 @@
 
 .productImage {
   flex: 1;
- 
+ position: relative;
   overflow: hidden;
-    background: #4f4e4e;
+    background: #e2e2e2;
   aspect-ratio: 1 / 1; /* 👈 ריבוע מושלם, אפשר לשנות ל-4/3 או 3/4 */
 }
 
@@ -52,7 +52,7 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
- 
+ transform: scale(1);
     object-fit: cover; /* cover = תמיד ממלא, חותך קצת אם צריך */
   transition: transform 0.3s ease; /* לאנימציית זום */
  
@@ -80,7 +80,7 @@
  
 }
 
-.productImage::before {
+/* .productImage::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -90,7 +90,7 @@
   filter: blur(5px);
   transform: scale(1);
   z-index: 0;
-}
+} */
 
 .productImage .swiper {
   position: relative;
@@ -100,4 +100,8 @@
 .productInfo{
   background-color: white;
   z-index: 999;
+}
+
+.productContainer.selected .productImage img {
+  transform: scale(1.05); /* זום עדין רק כשהמוצר נבחר */
 }

@@ -69,7 +69,7 @@ const Product = ({ images, name, selected, onClick }) => {
     >
       <div
         className="productImage"
-        style={{ backgroundImage: `url(${activeImage})` }}
+        // style={{ backgroundImage: `url(${activeImage})` }}
       >
         <Swiper
           spaceBetween={0}
