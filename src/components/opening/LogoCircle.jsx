@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../css/opening.css';
 import FellyLogo from '../../assets/fellyLogo.jpeg';
+import FellyQR from '../../assets/FELLY.png';
 
 export default function LogoCircle() {
   const [rotate, setRotate] = useState(false);
@@ -14,7 +15,8 @@ export default function LogoCircle() {
         <img src={FellyLogo} alt="" className="img" /> 
       </div>
       <div className="circle-back">
-        <p>היי 👋</p>
+             <img src={FellyQR} alt="" className="img" /> 
+
       </div>
     </div>
   );
