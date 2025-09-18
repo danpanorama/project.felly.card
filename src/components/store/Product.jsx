@@ -63,7 +63,7 @@ const Product = ({ images, name, selected, onClick }) => {
   return (
     <motion.div
       layout
-      transition={{ type: "spring", stiffness: 200, damping: 20 }}
+      transition={{ type: "spring", stiffness: 300, damping: 25 }}
       className={`productContainer ${selected ? "selected" : ""}`}
       onClick={onClick}
     >
